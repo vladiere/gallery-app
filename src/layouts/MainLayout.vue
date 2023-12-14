@@ -42,7 +42,7 @@
       </q-toolbar>
     </q-header>
 
-    <q-drawer show-if-above v-model="rightDrawerOpen" side="right" bordered class="bg-grey-4" :width="240">
+    <q-drawer v-if="Platform.is.mobile" show-if-above v-model="rightDrawerOpen" side="right" bordered class="bg-grey-4" :width="240">
        <div class="column reverse">
           <div class="column q-ma-md">
             <div class="text-h6 q-mb-md">Settings</div>
